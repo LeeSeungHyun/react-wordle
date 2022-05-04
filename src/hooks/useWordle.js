@@ -23,6 +23,7 @@ const useWordle = (solution) => {
     })
 
     // find any yellow letters
+    // soultion: piped, curentGuess: plans일 경우 생각해보기
     formattedGuess.forEach((l, i) => {
       if (solutionArray.includes(l.key) && l.color !== 'green') {
         formattedGuess[i].color = 'yellow'
